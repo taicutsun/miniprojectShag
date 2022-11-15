@@ -15,18 +15,33 @@
 
 <div>
   <div class="dish">
-    dish
-    <button id="first" onclick="send('burger')">send</button>
+    <img src="img/burger.jpg" />
+    <div>
+      burger 
+      <div>price:10$</div>
+     <button id="first" onclick="send('burger')">send</button>
+    </div>
+    
   </div>
 
   <div class="dish">
-    dish2
-    <button id="sec" onclick="send('potato')">send</button>
+    <img src="img/potato.jpg" />
+    <div>
+      potato
+      <div>price:20$</div>
+      <button id="sec" onclick="send('potato')">send</button>
+    </div>
+
   </div> 
 
   <div class="dish">
-    dish3
-    <button id="third" onclick="send('pizza')">send</button>
+    <img src="img/pizza.jpg" />
+    <div>
+      pizza
+      <div>price:30$</div>
+      <button id="third" onclick="send('pizza')">send</button>
+    </div>
+
   </div>
 </div>
 
@@ -34,8 +49,6 @@
 
  <script>
 const url = 'http://localhost:3001/basket';
-
-
 
 async function send(d){
 let sendData={
